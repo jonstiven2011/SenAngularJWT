@@ -1,0 +1,21 @@
+<div class="box">
+    <h2>Lista De Ambientes</h2>
+    <table class="table table table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Salón</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col">Usabilidad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let salon of ambientes">
+                    <td style="width: 20px;">{{salon.id}}</td>
+                    <td style="width: 80px;">{{salon.name}}</td>
+                    <td style="width: 80px;">{{salon.state}}</td>
+                    <td style="width: 80px;">{{salon.usability}}</td>
+                </tr>        
+            </tbody>
+    </table>
+</div>

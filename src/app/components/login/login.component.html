@@ -1,0 +1,19 @@
+<br><br><br><br>
+<div class="box-login">
+    <h3 class="text-center">LOGUEARSE</h3>
+    <form>
+        <div class="from-group">
+            <label>Usuario: almacen2020@misena.edu.co</label>
+            <input type="text" class="form-control" placeholder="User" required [(ngModel)]="user.misena_email" name="misena_email" >
+        </div>
+        <div class="from-group">
+            <label>Password: 1234567821</label>
+            <input type="password" class="form-control" placeholder="password" required [(ngModel)]="user.password" name="password">
+        </div>
+        <br/>
+        <button class="btn btn-primary" (click)="login()" >Ingresar</button>
+    </form>
+</div>
+<div class="alert alert-danger" *ngIf="errorMessage">
+    {{errorMessage}}
+</div>
